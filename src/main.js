@@ -10,6 +10,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
+axios.defaults.baseURL = 'http://127.0.0.1:8086/arist/'
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
 
 /* eslint-disable no-new */
 new Vue({

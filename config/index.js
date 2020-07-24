@@ -11,12 +11,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'http://127.0.0.1:8086',
-        pathRewrite: {
-          '^/api': ''
+      /* '/':{
+        target:"http://localhost:8086/arist",
+        secure:false,
+        changeOrigin:true,
+        pathRewrite:{
+          '^/api':'/'
         }
-      }
+      } */
     },
 
     // Various Dev Server settings
